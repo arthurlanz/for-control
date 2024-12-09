@@ -10,21 +10,22 @@
     let numberF = Number(prompt(`Insira um número final`));
 
     //PROCESSAMENTO
+    let impares = [];
+        let pares = [];
     if (numberI >= numberF) {
         alert("Erro!");
         alert(" O número inicial inserido deve ser menor que o número final.")
     } else {
-        let impares = [];
-        let pares = [];
-    }
-
-    for (let numero = numberI; numero <= numberF; numero++) {
+        for (let numero = numberI; numero <= numberF; numero++) {
         if (numero % 2 === 0) {
             pares.push(numero);
         } else {
             impares.push(numero);
         }
+    } 
     }
+
+    
 
     //SAÍDA
     document.write(`Números pares: ${pares.join(", ")} <br>
