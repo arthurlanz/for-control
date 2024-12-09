@@ -9,12 +9,12 @@
     let dias = [];
 
     //PROCESSAMENTO
-    for (dias = 0; investido < 2000; dias++) {
+    for (dias = 1; investido <= 2000; dias++) {
         investido += investido * 0.02;
     }
 
-    let diasCorridos = dias + Math.floor(dias / 5) * 2;
+    let diasUteis = dias + Math.floor(dias / 5) * 2;
 
     //SAÍDA
-    document.write(`Joãozinho chegará a R$ 2.000,00 em ${diasCorridos} dia(s) corrido(s).`);
-</script
+    document.write(`Joãozinho chegará a R$ 2.000,00 em ${diasUteis} dia(s) corrido(s).`);
+</script>
